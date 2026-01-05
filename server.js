@@ -9,7 +9,11 @@ import getproducts from './routes/products.js';
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:3000"
+  origin: 
+    [
+    "http://localhost:3000",
+  'https://thrift-frontend.vercel.app'
+      ]
 }));
 
 app.use(express.json());
