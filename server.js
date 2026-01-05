@@ -12,7 +12,7 @@ app.use(cors({
   origin: 
     [
     "http://localhost:3000",
-  'https://thrift-frontend.vercel.app'
+  "https://thrift-frontend.vercel.app"
       ]
 }));
 
