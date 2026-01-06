@@ -46,8 +46,8 @@ export const checkoutpayment = async (req, res) => {
         const session = await stripe.checkout.sessions.create({
             mode: 'payment',
             line_items: lineItems,
-            success_url: 'http://localhost:3000/success',
-            cancel_url: 'http://localhost:3000/cancel',
+            success_url: 'https://thrift-frontend.vercel.app/success',
+            cancel_url: 'https://thrift-frontend.vercel.app/cancel',
         });
         res.json({ url: session.url });
     } catch (error) {
